@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>investore</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.arcticmodal.min.js"></script>
+    <script src="js/init.js"></script>
+</head>
+
+<body>
+
+<div class="mobile-menu-overlay"></div>
+
+<div class="mobile-menu-body">
+    <div class="top">
+        <div class="user">
+            <img src="images/user-photo.png" alt="">
+            <span>Piter Malarkey</span>
+        </div>
+        <div class="mobile-menu-close"></div>
+    </div>
+
+    <ul class="menu">
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#" class="active">Transfer Funds</a></li>
+        <li><a href="#" class="dropdown">Your information</a></li>
+    </ul>
+
+    <a href="#" class="exit">Exit</a>
+</div>
+
+<header class="header">
+    <a href="#" class="header__logo">
+        <img src="images/header-logo.png" alt="">
+    </a>
+
+    <ul class="header__nav">
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#" class="active">Transfer Funds</a></li>
+        <li><a href="#" class="dropdown">Your information</a></li>
+    </ul>
+
+    <div class="header__right-controls">
+        <a class="header__right-controls__lang-current">EN</a>
+
+        <a class="header__right-controls__user-info">
+            <span class="header__right-controls__user-info__name">Piter Malarkey</span>
+            <img src="images/user-photo.png" alt="" class="header__right-controls__user-info__photo">
+        </a>
+    </div>
+	
+	<a class="header__mobile-button"></a>
+</header>
+
+<section class="content">
+    <div class="container">
+        <div class="left-sidebar">
+            <a href="#" class="notification green">
+                <span>You have received money</span>
+                Review deliveries to apply them to your account
+            </a>
+
+            <a href="#" class="notification red">
+                <span>You were asked for payments</span>
+                Check the payments you are requested to make
+            </a>
+
+            <div class="block">
+                <div class="icon">
+                    <img src="images/icon-left-gift.svg" alt="">
+                </div>
+                <div class="title">
+                    Refer your friends and win
+                </div>
+                <div class="description">
+                    For each friend who sings up and adds funds to their account, you and they will each receive $5 USD.
+                </div>
+                <div class="buttons">
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content">
+            <h2 class="page-headline">
+                <a href="#">Your Saved Cards</a>
+            </h2>
+
+            <div class="page-description">
+                Manage your credit/debit cards as payment and deposit methods
+            </div>
+
+            <div class="cards-list">
+                <div class="item">
+                    <img src="images/img-credit-card.svg" alt="">
+                    <div class="card-name">Credit</div>
+                    <img src="images/card-type-visa.svg" alt="" class="card-type">
+                    <a class="card-delete"></a>
+                    <div class="card-info">
+                        <div class="owner-name">Piter Malarkey</div>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>4289</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/img-credit-card.svg" alt="">
+                    <div class="card-name">Credit</div>
+                    <img src="images/card-type-visa.svg" alt="" class="card-type">
+                    <a class="card-delete"></a>
+                    <div class="card-info">
+                        <div class="owner-name">Piter Malarkey</div>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>4289</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/img-credit-card.svg" alt="">
+                    <div class="card-name">Credit</div>
+                    <img src="images/card-type-visa.svg" alt="" class="card-type">
+                    <a class="card-delete"></a>
+                    <div class="card-info">
+                        <div class="owner-name">Piter Malarkey</div>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>4289</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-block">
+                <button class="button yellow button-add-card">Add a new card</button>
+            </div>
+
+            <div class="more-information">
+                These transactions are operated by International Payments Inc. <a href="#">Learn more.</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- modals -->
+
+<div class="g-hidden">
+    <div class="box-modal" id="modal-add-card">
+        <div class="box-modal_close arcticmodal-close"></div>
+
+        <div class="title">Add a new card</div>
+
+        <form>
+            <div class="field">
+                <div class="field-name">Name as it appears on your card</div>
+                <input type="text" placeholder="John Jonson">
+                <div class="field-description">The card must be in your name</div>
+            </div>
+
+            <div class="field">
+                <div class="field-name">Credit/ debit card number</div>
+                <input type="text" placeholder="0000 0000 0000 0000">
+                <div class="field-description">We accept Visa and Mastercard</div>
+            </div>
+
+            <div class="field">
+                <div class="col">
+                    <div class="field-name">Expity date</div>
+                    <input type="text" placeholder="MM/YY">
+                </div>
+
+                <div class="col">
+                    <div class="field-name">CVV</div>
+                    <input type="text" placeholder="CVV">
+                </div>
+            </div>
+
+            <input type="submit" value="Save card" class="grey">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

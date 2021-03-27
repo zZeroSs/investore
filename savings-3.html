@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>investore</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.arcticmodal.min.js"></script>
+    <script src="js/init.js"></script>
+</head>
+
+<body>
+
+<div class="mobile-menu-overlay"></div>
+
+<div class="mobile-menu-body">
+    <div class="top">
+        <div class="user">
+            <img src="images/user-photo.png" alt="">
+            <span>Piter Malarkey</span>
+        </div>
+        <div class="mobile-menu-close"></div>
+    </div>
+
+    <ul class="menu">
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#" class="active">Transfer Funds</a></li>
+        <li><a href="#" class="dropdown">Your information</a></li>
+    </ul>
+
+    <a href="#" class="exit">Exit</a>
+</div>
+
+<header class="header">
+    <a href="#" class="header__logo">
+        <img src="images/header-logo.png" alt="">
+    </a>
+
+    <ul class="header__nav">
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#" class="active">Transfer Funds</a></li>
+        <li><a href="#" class="dropdown">Your information</a></li>
+    </ul>
+
+    <div class="header__right-controls">
+        <a class="header__right-controls__lang-current">EN</a>
+
+        <a class="header__right-controls__user-info">
+            <span class="header__right-controls__user-info__name">Piter Malarkey</span>
+            <img src="images/user-photo.png" alt="" class="header__right-controls__user-info__photo">
+        </a>
+    </div>
+	
+	<a class="header__mobile-button"></a>
+</header>
+
+<section class="content">
+    <div class="container">
+        <div class="left-sidebar">
+            <a href="#" class="notification green">
+                <span>You have received money</span>
+                Review deliveries to apply them to your account
+            </a>
+
+            <a href="#" class="notification red">
+                <span>You were asked for payments</span>
+                Check the payments you are requested to make
+            </a>
+
+            <div class="block">
+                <div class="icon">
+                    <img src="images/icon-left-gift.svg" alt="">
+                </div>
+                <div class="title">
+                    Refer your friends and win
+                </div>
+                <div class="description">
+                    For each friend who sings up and adds funds to their account, you and they will each receive $5 USD.
+                </div>
+                <div class="buttons">
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content">
+            <h2 class="page-headline">
+                <a href="#">Create your Savings Plan</a>
+            </h2>
+
+            <div class="page-description grey">
+                2.90% + $1.0 USD (minimum fee $1.50 USD)
+            </div>
+
+            <div class="warning-block">
+                <b>Warning</b>
+                To protect the community from fraud, deposits received by card must remain in your account for 60 days.
+            </div>
+
+            <a class="button-saving-plan-create" style="color: green; font-size: 20px;">Modal 'Create your Saving Plan'</a><br>
+            <a class="button-saving-plan-create-success" style="color: green; font-size: 20px;">Modal 'Successfully'</a><br><br>
+
+            <div class="form-description">
+                Select how offen you want your card to be charged.
+            </div>
+
+            <form class="form-block">
+                <div class="field-radio">
+                    <input id="radio-1" type="radio" name="how-often" value="1" checked>
+                    <label for="radio-1">
+                        <b>Weekly</b>
+                        Every monday
+                    </label>
+                </div>
+
+                <div class="field-radio">
+                    <input id="radio-2" type="radio" name="how-often" value="2">
+                    <label for="radio-2">
+                        <b>Biweekly</b>
+                        1st and 15th of each month
+                    </label>
+                </div>
+
+                <div class="field-radio">
+                    <input id="radio-3" type="radio" name="how-often" value="3">
+                    <label for="radio-3">
+                        <b>Monthly</b>
+                        Within the first 3 days of the month
+                    </label>
+                </div>
+
+                <div class="field-radio">
+                    <input id="radio-4" type="radio" name="how-often" value="3" disabled>
+                    <label for="radio-4">
+                        <b>Disabled</b>
+                        Disabled
+                    </label>
+                </div>
+
+                <div class="field">
+                    <div class="field-name">What card do you want to schedule your charges to?</div>
+
+                    <details class="custom-select">
+                        <summary class="radios">
+                            <input type="radio" name="item" id="default" title="Select a card" checked>
+                            <input type="radio" name="item" id="item1" title="**** 1235">
+                            <input type="radio" name="item" id="item2" title="**** 4564">
+                        </summary>
+                        <ul class="list">
+                            <li>
+                                <label for="item1">
+                                    **** 1235
+                                    <span class="bank-name">Bank name</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="item2">
+                                    **** 4564
+                                    <span class="bank-name">Bank name</span>
+                                </label>
+                            </li>
+                            <li>
+                                <a class="add-card">Add a new card</a>
+                            </li>
+                        </ul>
+                    </details>
+
+                    <div class="field-description">Available for Visa and Mastercard</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-name">Amount to be charged to your card on a recurring basis</div>
+                    <input type="text" placeholder="$">
+                    <div class="field-description">Minimum $10 USD. The exchange rate is determined by your Bank</div>
+                </div>
+
+                <div class="button-block">
+                    <button class="button yellow">Create your Savings Plan</button>
+                    <div class="info">
+                        Your next recurring charge will be next Monday 2 Dec 2021
+                    </div>
+                </div>
+            </form>
+
+            <div class="more-information">
+                <p>
+                    Your deposit will be received and applied according to the <a href="#">clearance times.</a>
+                </p>
+                <p>
+                    These transactions are operated by International Payments Inc. <a href="#">Learn more.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- modals -->
+
+<div class="g-hidden">
+    <div class="box-modal" id="modal-saving-plan-create">
+        <div class="box-modal_close arcticmodal-close"></div>
+
+        <div class="title">Create your Saving Plan</div>
+
+        <div class="notification-text">
+            <div class="small">
+                2.90% + $1.0 USD (minimum fee $1.50 USD)
+            </div>
+            You will schedule a recurring charge to your account for <b>$55 USD, weekly</b>, with your <b>**** 0034 card.</b>
+        </div>
+
+        <div class="button-block">
+            <button>Confirm</button>
+        </div>
+    </div>
+
+
+    <div class="box-modal" id="modal-saving-plan-create-success">
+        <div class="box-modal_close arcticmodal-close"></div>
+
+        <div class="title">Successfully</div>
+
+        <div class="notification-text">
+            You scheduled a <b>weekly</b> charge to your card in the amount of <b>$60.00 USD</b>. Charges will be applied every Monday. In case of a non-business day, the charges will be applied on the next corresponding business day.
+        </div>
+
+        <div class="button-block">
+            <button>Confirm</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -816,8 +816,6 @@ a:visited {
     width: 100%;
     margin: 0 0 16px 0;
 }
-
-
 .right-content .form-block .field details {
     position: relative;
     width: 100%;
@@ -1346,18 +1344,67 @@ a:visited {
     background: #EF1616;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.right-content .block-socials {
+    display: none;
+    float: left;
+    width: 100%;
+    padding: 24px;
+    margin: 32px 0 0 0;
+    background: #FAFBFC;
+    border: 1px solid #ECEFF2;
+    border-radius: 16px;
+}
+.right-content .block-socials .icon {
+    float: left;
+    width: 100%;
+    padding: 0 0 24px 0;
+}
+.right-content .block-socials .icon img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.right-content .block-socials .title {
+    float: left;
+    width: 100%;
+    margin: 0 0 4px 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 160%;
+    color: #2B3B4E;
+}
+.right-content .block-socials .description {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    line-height: 150%;
+    color: #808995;
+}
+.right-content .block-socials .buttons {
+    float: left;
+    width: 100%;
+    padding: 24px 0 0 0;
+}
+.right-content .block-socials .buttons a {
+    float: left;
+    width: 100%;
+    margin: 0 0 8px 0;
+    padding: 12px;
+    background: #2B3B4E;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.right-content .block-socials .buttons a:last-of-type {
+    margin: 0;
+}
+.right-content .block-socials .buttons a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
 
 
 
@@ -1683,9 +1730,6 @@ a:visited {
     .content {
         margin: 15px 0 0 0;
     }
-
-
-
     .right-content .cards-list .item {
         width: 100%;
     }
@@ -1704,6 +1748,12 @@ a:visited {
     }
     .right-content {
         width: 100%;
+    }
+    .left-sidebar .block {
+        display: none;
+    }
+    .right-content .block-socials {
+        display: block;
     }
 }
 
